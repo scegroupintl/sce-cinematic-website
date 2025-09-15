@@ -54,7 +54,7 @@ export default function Hero() {
         <div
           className={`space-y-6 ${mounted ? "animate-slide-up" : "opacity-0"}`}
         >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-elegant font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-secondary-200 to-gold-400">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-trajan font-semibold text-transparent bg-clip-text bg-gradient-to-b from-amber-100 via-stone-300 to-amber-600 tracking-wide drop-shadow-[0_0_1px_rgba(255,255,255,0.4)] [text-shadow:0_1px_0_rgba(255,248,220,0.8),0_2px_0_rgba(205,180,140,0.6),0_3px_0_rgba(160,130,95,0.4)]">
             SCE Cinematic Group
           </h1>
         </div>
@@ -65,10 +65,10 @@ export default function Hero() {
             mounted ? "animate-slide-up delay-500" : "opacity-0"
           }`}
         >
-          <p className="text-xl md:text-2xl lg:text-3xl font-cinematic text-gold-300 mb-4">
+          <p className="text-xl md:text-2xl lg:text-3xl font-cinematic text-transparent bg-clip-text bg-gradient-to-r from-stone-300 via-amber-200 to-stone-400 mb-4 tracking-wider [text-shadow:0_1px_0_rgba(255,248,220,0.6),0_1px_1px_rgba(160,130,95,0.3)]">
             Producción Audiovisual
           </p>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto"></div>
+          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-amber-300 to-transparent mx-auto"></div>
         </div>
 
         {/* Cinematic Banner */}

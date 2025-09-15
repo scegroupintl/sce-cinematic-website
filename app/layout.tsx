@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Oswald, Playfair_Display } from "next/font/google";
+import {
+  Oswald,
+  Playfair_Display,
+  Bebas_Neue,
+  Montserrat,
+  Cinzel,
+} from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import Footer from "@/lib/components/Footer";
 import { NavBar } from "@/lib/components/NavBar";
@@ -9,6 +15,24 @@ const cinematicFont = Oswald({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-cinematic",
+});
+
+const bebasFont = Bebas_Neue({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-bebas",
+});
+
+const modernFont = Montserrat({
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-modern",
+});
+
+const trajanFont = Cinzel({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-trajan",
 });
 
 const elegantFont = Playfair_Display({
@@ -31,7 +55,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`scroll-smooth ${cinematicFont.variable} ${elegantFont.variable}`}
+      className={`scroll-smooth ${cinematicFont.variable} ${elegantFont.variable} ${bebasFont.variable} ${modernFont.variable} ${trajanFont.variable}`}
     >
       <body
         className={`${cinematicFont.className} tracking-wide bg-primary-500 text-white min-h-screen`}

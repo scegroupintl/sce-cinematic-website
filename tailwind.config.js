@@ -73,6 +73,9 @@ module.exports = {
       fontFamily: {
         'cinematic': ['Oswald', 'sans-serif'],
         'elegant': ['Playfair Display', 'serif'],
+        'bebas': ['Bebas Neue', 'sans-serif'],
+        'modern': ['Montserrat', 'sans-serif'],
+        'trajan': ['Cinzel', 'serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
