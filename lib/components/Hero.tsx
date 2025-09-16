@@ -19,31 +19,31 @@ export default function Hero() {
       </div>
 
       {/* Film strip decoration */}
-      <div className="absolute left-0 top-0 h-full w-8 bg-gradient-to-b from-transparent via-gold-400/20 to-transparent">
+      <div className="absolute left-0 top-0 h-full w-2 sm:w-4 lg:w-8 bg-gradient-to-b from-transparent via-gold-400/10 sm:via-gold-400/15 lg:via-gold-400/20 to-transparent">
         <div
           className="w-full h-full"
           style={{
             backgroundImage: `repeating-linear-gradient(
             to bottom,
             transparent 0px,
-            transparent 40px,
-            rgba(251, 191, 36, 0.3) 40px,
-            rgba(251, 191, 36, 0.3) 50px
+            transparent 30px,
+            rgba(251, 191, 36, 0.1) 30px,
+            rgba(251, 191, 36, 0.1) 35px
           )`,
           }}
         ></div>
       </div>
 
-      <div className="absolute right-0 top-0 h-full w-8 bg-gradient-to-b from-transparent via-gold-400/20 to-transparent">
+      <div className="absolute right-0 top-0 h-full w-2 sm:w-4 lg:w-8 bg-gradient-to-b from-transparent via-gold-400/10 sm:via-gold-400/15 lg:via-gold-400/20 to-transparent">
         <div
           className="w-full h-full"
           style={{
             backgroundImage: `repeating-linear-gradient(
             to bottom,
             transparent 0px,
-            transparent 40px,
-            rgba(251, 191, 36, 0.3) 40px,
-            rgba(251, 191, 36, 0.3) 50px
+            transparent 30px,
+            rgba(251, 191, 36, 0.1) 30px,
+            rgba(251, 191, 36, 0.1) 35px
           )`,
           }}
         ></div>
@@ -60,7 +60,7 @@ export default function Hero() {
               }`}
             >
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-elegant font-semibold text-transparent bg-clip-text bg-gradient-to-b from-amber-100 via-stone-300 to-amber-600 tracking-wide drop-shadow-[0_0_1px_rgba(255,255,255,0.4)] [text-shadow:0_1px_0_rgba(255,248,220,0.8),0_2px_0_rgba(205,180,140,0.6),0_3px_0_rgba(160,130,95,0.4)] leading-tight">
-                Creamos Historias que Perduran
+                Capturamos Momentos que Trascienden
               </h1>
             </div>
 
