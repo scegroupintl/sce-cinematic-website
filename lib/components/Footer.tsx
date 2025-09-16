@@ -53,6 +53,7 @@ const Footer = () => {
             </div>
           </div>
 
+          <div></div>
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-elegant font-bold text-white">
@@ -90,51 +91,7 @@ const Footer = () => {
                   info@scecinematicgroup.com
                 </a>
               </div>
-              <div className="flex items-start space-x-3">
-                <svg
-                  className="w-5 h-5 text-secondary-400 mt-1"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span className="leading-relaxed">
-                  Calle Bolivar C/C Cedeño Edificio San Cristobal - Piso 1,
-                  Oficina #2
-                </span>
-              </div>
             </div>
-          </div>
-
-          {/* Services */}
-          <div className="space-y-4">
-            <h3 className="text-xl font-elegant font-bold text-white">
-              Servicios
-            </h3>
-            <ul className="space-y-2 text-gray-300">
-              <li className="hover:text-secondary-400 transition-colors duration-300 cursor-pointer">
-                Campañas Publicitarias
-              </li>
-              <li className="hover:text-secondary-400 transition-colors duration-300 cursor-pointer">
-                Videos Corporativos
-              </li>
-              <li className="hover:text-secondary-400 transition-colors duration-300 cursor-pointer">
-                Videos Musicales
-              </li>
-              <li className="hover:text-secondary-400 transition-colors duration-300 cursor-pointer">
-                Cobertura de Eventos
-              </li>
-              <li className="hover:text-secondary-400 transition-colors duration-300 cursor-pointer">
-                Documentales
-              </li>
-              <li className="hover:text-secondary-400 transition-colors duration-300 cursor-pointer">
-                Contenido Digital
-              </li>
-            </ul>
           </div>
         </div>
 

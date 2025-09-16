@@ -49,110 +49,92 @@ export default function Hero() {
         ></div>
       </div>
 
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        {/* Main Headline */}
-        <div
-          className={`space-y-6 ${mounted ? "animate-slide-up" : "opacity-0"}`}
-        >
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-trajan font-semibold text-transparent bg-clip-text bg-gradient-to-b from-amber-100 via-stone-300 to-amber-600 tracking-wide drop-shadow-[0_0_1px_rgba(255,255,255,0.4)] [text-shadow:0_1px_0_rgba(255,248,220,0.8),0_2px_0_rgba(205,180,140,0.6),0_3px_0_rgba(160,130,95,0.4)]">
-            SCE Cinematic Group
-          </h1>
-        </div>
+      <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
+          {/* Left Content */}
+          <div className="space-y-8">
+            {/* Main Headline */}
+            <div
+              className={`space-y-6 ${
+                mounted ? "animate-slide-up" : "opacity-0"
+              }`}
+            >
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-elegant font-semibold text-transparent bg-clip-text bg-gradient-to-b from-amber-100 via-stone-300 to-amber-600 tracking-wide drop-shadow-[0_0_1px_rgba(255,255,255,0.4)] [text-shadow:0_1px_0_rgba(255,248,220,0.8),0_2px_0_rgba(205,180,140,0.6),0_3px_0_rgba(160,130,95,0.4)] leading-tight">
+                Creamos Historias que Perduran
+              </h1>
+            </div>
 
-        {/* Subtitle */}
-        <div
-          className={`mt-8 ${
-            mounted ? "animate-slide-up delay-500" : "opacity-0"
-          }`}
-        >
-          <p className="text-xl md:text-2xl lg:text-3xl font-cinematic text-transparent bg-clip-text bg-gradient-to-r from-stone-300 via-amber-200 to-stone-400 mb-4 tracking-wider [text-shadow:0_1px_0_rgba(255,248,220,0.6),0_1px_1px_rgba(160,130,95,0.3)]">
-            Producción Audiovisual
-          </p>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-amber-300 to-transparent mx-auto"></div>
-        </div>
+            {/* Description */}
+            <div
+              className={`${
+                mounted ? "animate-slide-up delay-500" : "opacity-0"
+              }`}
+            >
+              <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light max-w-lg">
+                En SCE Cinematic Group, nos especializamos en crear contenido
+                audiovisual de alta calidad que da vida a tus historias. Ya sea
+                un evento o una entrevista, aseguramos que cada momento sea
+                capturado con precisión y arte.
+              </p>
+            </div>
 
-        {/* Cinematic Banner */}
-        <div
-          className={`mt-12 mb-8 ${
-            mounted ? "animate-fade-in delay-800" : "opacity-0"
-          }`}
-        >
-          <div className="relative mx-auto max-w-4xl">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-r from-secondary-600/20 to-gold-400/20 blur-xl"></div>
-              <Image
-                src="https://images.unsplash.com/photo-1575411602736-5e9f24e277d0?w=1200&h=400&fit=crop&q=80"
-                alt="Cinematic Production Banner"
-                width={1200}
-                height={400}
-                className="relative z-10 w-full h-48 md:h-64 lg:h-72 object-cover opacity-80 hover:opacity-100 transition-opacity duration-500"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30"></div>
+            {/* CTA Buttons */}
+            <div
+              className={`flex flex-col sm:flex-row gap-4 ${
+                mounted ? "animate-slide-up delay-800" : "opacity-0"
+              }`}
+            >
+              <button
+                className="relative px-8 py-4 cursor-pointer bg-gradient-to-r from-secondary-600 to-secondary-500 text-white font-cinematic font-semibold rounded-lg transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-secondary-500/50 hover:brightness-110 overflow-hidden group"
+                onClick={() =>
+                  document
+                    .getElementById("portfolio")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                <span className="relative z-10">Ver Portafolio</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-secondary-400 to-secondary-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-[1px]"></div>
+              </button>
 
-              {/* Film strip overlay effect */}
-              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-gold-400 to-gold-600"></div>
-              <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-gold-400 to-gold-600"></div>
-              <div className="absolute left-0 top-2 bottom-2 w-1 bg-repeating-perforations"></div>
-              <div className="absolute right-0 top-2 bottom-2 w-1 bg-repeating-perforations"></div>
+              <button
+                className="relative px-8 py-4 cursor-pointer bg-transparent border border-gold-400 text-gold-400 font-cinematic font-semibold rounded-lg transition-all duration-300 hover:text-black hover:bg-gradient-to-r hover:from-gold-600 hover:to-gold-500 hover:scale-110 hover:shadow-2xl hover:shadow-gold-500/50 hover:brightness-110 overflow-hidden group"
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                <span className="relative z-10">Contactar Ahora</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-gold-400 to-gold-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-[1px]"></div>
+              </button>
             </div>
           </div>
-        </div>
 
-        {/* Description */}
-        <div
-          className={`mt-8 max-w-3xl mx-auto ${
-            mounted ? "animate-slide-up delay-1200" : "opacity-0"
-          }`}
-        >
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-light">
-            Creamos experiencias cinematográficas excepcionales que cautivan
-            audiencias y transforman ideas en obras maestras audiovisuales. Cada
-            proyecto es una nueva oportunidad para contar historias que perduran
-            en el tiempo.
-          </p>
-        </div>
-
-        {/* CTA Buttons */}
-        <div
-          className={`mt-16 flex flex-col sm:flex-row gap-6 justify-center items-center ${
-            mounted ? "animate-slide-up delay-1500" : "opacity-0"
-          }`}
-        >
-          <button
-            className="group relative cursor-pointer px-8 py-4 bg-gradient-to-r from-secondary-600 to-secondary-500 rounded-lg font-cinematic text-lg font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-secondary-500/30"
-            onClick={() =>
-              document
-                .getElementById("portfolio")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
+          {/* Right Image */}
+          <div
+            className={`lg:flex justify-center items-center hidden ${
+              mounted ? "animate-fade-in delay-1000" : "opacity-0"
+            }`}
           >
-            <span className="relative z-10">Ver Portafolio</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-secondary-500 to-secondary-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </button>
-
-          <button
-            className="group cursor-pointer relative px-8 py-4 border-2 border-gold-400 text-gold-400 rounded-lg font-cinematic text-lg font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:bg-gold-400 hover:text-black"
-            onClick={() =>
-              document
-                .getElementById("contact")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            <span className="relative z-10">Contactar Ahora</span>
-          </button>
-        </div>
-
-        {/* Scroll indicator */}
-        <div
-          className={`mt-20 ${
-            mounted ? "animate-slide-up delay-1900" : "opacity-0"
-          }`}
-        >
-          <div className="flex flex-col items-center text-gray-400">
-            <p className="text-sm font-light mb-4">Descubre más</p>
-            <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-gradient-to-b from-gray-400 to-transparent rounded-full mt-2 animate-bounce"></div>
+            <div className="relative">
+              <div className="w-[500px] h-80 bg-gray-600/30 rounded-2xl flex items-center justify-center shadow-2xl backdrop-blur-sm">
+                <svg
+                  className="w-32 h-32 text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                  />
+                </svg>
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-secondary-500/20 rounded-full blur-sm"></div>
+              <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-gold-400/20 rounded-full blur-md"></div>
             </div>
           </div>
         </div>

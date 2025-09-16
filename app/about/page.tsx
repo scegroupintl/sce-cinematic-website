@@ -27,6 +27,7 @@ export default function AboutUs() {
             <div className="w-24 h-1 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto mt-6"></div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-primary-500 to-transparent"></div>
       </section>
 
       {/* Company Story */}
@@ -266,7 +267,7 @@ export default function AboutUs() {
             obra maestra cinematográfica.
           </p>
           <button
-            className="px-8 py-4 bg-gradient-to-r from-secondary-600 to-secondary-500 text-white font-cinematic font-medium rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-secondary-500/30"
+            className="px-8 py-4 bg-gradient-to-r cursor-pointer from-secondary-600 to-secondary-500 text-white font-cinematic font-medium rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-lg hover:shadow-secondary-500/30"
             onClick={() => (window.location.href = "/#contact")}
           >
             Contactar Ahora

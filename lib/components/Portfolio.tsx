@@ -12,72 +12,72 @@ interface PortfolioItem {
   year: number;
 }
 
-// Sample portfolio data - replace with real content
 const portfolioItems: PortfolioItem[] = [
   {
     id: 1,
-    title: "Campaña Publicitaria Premium",
-    category: "Publicidad",
+    title: "PFJ 2025 - Sesión Venezuela Caracas",
+    category: "Eventos Religiosos",
     description:
-      "Producción audiovisual de alto impacto para marca de lujo internacional.",
+      "Producción cinematográfica profesional del evento 'Para la Fortaleza de la Juventud' en Venezuela, capturando testimonios inspiradores, discursos edificantes y momentos especiales de conexión espiritual entre los jóvenes de la región Caribe.",
     thumbnail: "https://img.youtube.com/vi/ktaQZ9kL6p0/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/embed/ktaQZ9kL6p0",
-    client: "Luxury Brand Corp",
-    year: 2024,
+    client: "La Iglesia de Jesucristo de los Santos de los Últimos Días",
+    year: 2025,
   },
   {
     id: 2,
-    title: "Documental Corporativo",
-    category: "Corporativo",
+    title: "PFJ 2025 - Sesión Santiago",
+    category: "Eventos Religiosos",
     description:
-      "Historia empresarial contada a través de testimonios y cinematografía profesional.",
+      "Producción cinematográfica profesional del evento 'Para la Fortaleza de la Juventud' en Venezuela, capturando testimonios inspiradores, discursos edificantes y momentos especiales de conexión espiritual entre los jóvenes de la región Caribe.",
     thumbnail: "https://img.youtube.com/vi/i31-SK60yUI/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/embed/i31-SK60yUI",
-    client: "Tech Innovation SA",
-    year: 2024,
+    client: "La Iglesia de Jesucristo de los Santos de los Últimos Días",
+    year: 2025,
   },
   {
     id: 3,
-    title: "Video Musical Artístico",
-    category: "Musical",
+    title: "PFJ 2025 - Sesión Santo Domingo Oeste",
+    category: "Eventos Religiosos",
     description:
-      "Dirección creativa y producción de video musical con efectos visuales avanzados.",
+      "Producción cinematográfica profesional del evento 'Para la Fortaleza de la Juventud' en Venezuela, capturando testimonios inspiradores, discursos edificantes y momentos especiales de conexión espiritual entre los jóvenes de la región Caribe.",
     thumbnail: "https://img.youtube.com/vi/R8dR_T0hAxw/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/embed/R8dR_T0hAxw",
-    client: "Artista Independiente",
-    year: 2023,
+    client: "La Iglesia de Jesucristo de los Santos de los Últimos Días",
+    year: 2025,
   },
   {
     id: 4,
-    title: "Evento Corporativo",
-    category: "Eventos",
+    title: "PFJ 2025 - Sesión Santo Domingo Este",
+    category: "Eventos Religiosos",
     description:
-      "Cobertura completa de evento empresarial con múltiples cámaras y edición en vivo.",
+      "Producción cinematográfica profesional del evento 'Para la Fortaleza de la Juventud' en Venezuela, capturando testimonios inspiradores, discursos edificantes y momentos especiales de conexión espiritual entre los jóvenes de la región Caribe.",
     thumbnail: "https://img.youtube.com/vi/3ciCg9__S4I/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/embed/3ciCg9__S4I",
-    client: "Global Conference",
-    year: 2023,
+    client: "La Iglesia de Jesucristo de los Santos de los Últimos Días",
+    year: 2025,
   },
   {
     id: 5,
-    title: "Cortometraje Narrativo",
-    category: "Cinematografía",
+    title: "PFJ 2025 - Sesión Puerto Rico",
+    category: "Eventos Religiosos",
     description:
-      "Proyecto artístico que explora temas sociales contemporáneos.",
+      "Producción cinematográfica profesional del evento 'Para la Fortaleza de la Juventud' en Venezuela, capturando testimonios inspiradores, discursos edificantes y momentos especiales de conexión espiritual entre los jóvenes de la región Caribe.",
     thumbnail: "https://img.youtube.com/vi/7R8ls6wrHJg/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/embed/7R8ls6wrHJg",
-    year: 2023,
+    client: "La Iglesia de Jesucristo de los Santos de los Últimos Días",
+    year: 2025,
   },
   {
     id: 6,
-    title: "Serie Web Promocional",
-    category: "Digital",
+    title: "PFJ 2025 - Sesión Venezuela Caracas",
+    category: "Eventos Religiosos",
     description:
-      "Serie de episodios cortos para plataformas digitales y redes sociales.",
+      "Producción cinematográfica profesional del evento 'Para la Fortaleza de la Juventud' en Venezuela, capturando testimonios inspiradores, discursos edificantes y momentos especiales de conexión espiritual entre los jóvenes de la región Caribe.",
     thumbnail: "https://img.youtube.com/vi/ktaQZ9kL6p0/maxresdefault.jpg",
     videoUrl: "https://www.youtube.com/embed/ktaQZ9kL6p0",
-    client: "Startup Digital",
-    year: 2024,
+    client: "La Iglesia de Jesucristo de los Santos de los Últimos Días",
+    year: 2025,
   },
 ];
 
