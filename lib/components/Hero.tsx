@@ -120,7 +120,7 @@ export default function Hero() {
           }`}
         >
           <button
-            className="group relative px-8 py-4 bg-gradient-to-r from-secondary-600 to-secondary-500 rounded-lg font-cinematic text-lg font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-secondary-500/30"
+            className="group relative cursor-pointer px-8 py-4 bg-gradient-to-r from-secondary-600 to-secondary-500 rounded-lg font-cinematic text-lg font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-secondary-500/30"
             onClick={() =>
               document
                 .getElementById("portfolio")
@@ -132,7 +132,7 @@ export default function Hero() {
           </button>
 
           <button
-            className="group relative px-8 py-4 border-2 border-gold-400 text-gold-400 rounded-lg font-cinematic text-lg font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:bg-gold-400 hover:text-black"
+            className="group cursor-pointer relative px-8 py-4 border-2 border-gold-400 text-gold-400 rounded-lg font-cinematic text-lg font-medium overflow-hidden transition-all duration-300 hover:scale-105 hover:bg-gold-400 hover:text-black"
             onClick={() =>
               document
                 .getElementById("contact")
