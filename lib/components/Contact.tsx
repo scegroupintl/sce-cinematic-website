@@ -23,14 +23,14 @@ export default function Contact() {
     const customerName = formInputs.customerName.value;
     const email = formInputs.email.value;
     const phone = formInputs.phone.value;
-    const service = formInputs.service.value;
+    const projectDescription = formInputs.projectDescription.value;
     const message = formInputs.description.value;
 
     const formData = new FormData();
     formData.append("Nombre", customerName);
     formData.append("Correo Electrónico", email);
     formData.append("Teléfono", phone);
-    formData.append("Servicio", service);
+    formData.append("Descripción del Proyecto", projectDescription);
     formData.append("Mensaje", message);
     formData.append("access_key", "d4d2ab83-9ae1-4db5-b9ac-b33e89562cab");
 
@@ -213,7 +213,7 @@ export default function Contact() {
                     <input
                       id="phone"
                       type="tel"
-                      placeholder="(xxx) xxx-xxxx"
+                      placeholder="123-456-7890"
                       className={inputClassNames}
                       required
                     />
@@ -221,24 +221,18 @@ export default function Contact() {
 
                   <div className="flex flex-col">
                     <label
-                      htmlFor="service"
+                      htmlFor="projectDescription"
                       className="mb-2 text-sm font-medium text-gray-300"
                     >
-                      Tipo de Proyecto
+                      Descripción del Proyecto
                     </label>
-                    <select id="service" className={inputClassNames} required>
-                      <option value="">Seleccionar Tipo de Proyecto</option>
-                      <option value="Publicidad">Campaña Publicitaria</option>
-                      <option value="Corporativo">Video Corporativo</option>
-                      <option value="Musical">Video Musical</option>
-                      <option value="Eventos">Cobertura de Eventos</option>
-                      <option value="Documental">Documental</option>
-                      <option value="Cinematografia">
-                        Cinematografía/Cortometraje
-                      </option>
-                      <option value="Digital">Contenido Digital</option>
-                      <option value="Otro">Otro</option>
-                    </select>
+                    <input
+                      id="projectDescription"
+                      type="text"
+                      placeholder="Escribe una breve descripción de tu proyecto"
+                      className={inputClassNames}
+                      required
+                    />
                   </div>
 
                   <div className="flex flex-col">
@@ -250,7 +244,7 @@ export default function Contact() {
                     </label>
                     <textarea
                       id="description"
-                      placeholder="Cuéntanos sobre tu proyecto cinematográfico..."
+                      placeholder="Cuéntanos más sobre tu proyecto cinematográfico..."
                       rows={4}
                       className={inputClassNames}
                       required
