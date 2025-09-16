@@ -65,7 +65,33 @@ export default function AboutUs() {
             </div>
 
             <div className="relative">
-              <div className="bg-dark-50/20 rounded-2xl p-8 border border-secondary-400/20">
+              {/* Image Placeholder */}
+              <div className="relative flex justify-center items-center mb-3">
+                <div className="w-[500px] h-80 bg-gray-600/30 rounded-2xl flex items-center justify-center shadow-2xl backdrop-blur-sm border border-secondary-400/20">
+                  <div className="text-center space-y-4">
+                    <svg
+                      className="w-16 h-16 mx-auto text-gray-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                      />
+                    </svg>
+                    <div className="text-gray-400 text-lg font-cinematic">
+                      500px × 320px
+                    </div>
+                    <div className="text-gray-500 text-sm">
+                      Imagen del Equipo
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-dark-50/20 rounded-2xl py-6 border border-secondary-400/20">
                 <div className="grid grid-cols-2 gap-12 text-center">
                   <div className="space-y-3">
                     <div className="text-5xl md:text-6xl font-bold text-secondary-400">
